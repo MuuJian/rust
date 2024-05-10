@@ -1,12 +1,9 @@
 fn main() {
-    let (a, mut b): (bool,bool) = (true, false);
-    // a = true,不可变; b = false，可变
-    println!("a = {}, b = {:?}", a, b);
+    let t = true;
 
-    b = true;
-    assert_eq!(a, b);
-    let v = vec![1, 2, 3];
+    let f: bool = false;
 
-    let s = format!("{v:?}");
-    println!("{}", s);
+    if f {
+        println!("Test");
+    }
 }
